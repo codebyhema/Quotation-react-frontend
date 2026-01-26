@@ -1,0 +1,76 @@
+{
+  "Furniture": {
+    "Living Room": {
+      "sofa work": [
+        "Use teak wood frame",
+        "Add storage under seat",
+        "Fabric color as per client choice"
+      ],
+      "curtains": [
+        "Use blackout fabric",
+        "Include curtain rod and rings",
+        "Check window measurements twice"
+      ],
+      "tv unit": [
+        "Use laminate finish",
+        "Provide open shelves",
+        "Include wire management hole"
+      ]
+    },
+    "Bedroom": {
+      "Wardrobe": [
+        "Use waterproof plywood",
+        "Add mirror on shutter",
+        "Include soft-close hinges"
+      ],
+      "Bed Frame": [
+        "Queen size bed with storage",
+        "Use hydraulic lift system",
+        "Laminate shade matching wardrobe"
+      ]
+    },
+    "Master Bedroom": {
+      "wardrobe": ["Sliding door type", "Include loft section"],
+      "loft section": ["Above wardrobe height 2ft"],
+      "dressing table": ["Include drawer section and mirror light"]
+    },
+    "Kitchen": {
+      "pvc ceiling": ["Use matte finish panels", "Provide cove light slot"],
+      "trolly": [
+        "Use stainless steel baskets",
+        "Include soft-closing channels"
+      ],
+      "glass storage": ["Use frosted glass shutter"]
+    },
+    "other work": {
+      "extra storage": ["Customize as per available wall space"]
+    }
+  },
+  "Electrical": {
+    "Lights": {
+      "LED Fitting": ["Warm white tone", "Check switch location"],
+      "Tube Light": ["White tone, 4 feet size"],
+      "Chandelier": ["Center aligned to ceiling fan"]
+    },
+    "Wiring": {
+      "New Wiring": ["Use branded wire", "Concealed layout"],
+      "Old Wiring Repair": ["Replace damaged joints", "Check load capacity"]
+    }
+  },
+  "POPCeiling": {
+    "False ceiling": {
+      "abc work": ["Use gypsum board", "Smooth finish edges"],
+      "cde work": ["Include LED strip provision"]
+    }
+  },
+  "Painting": {
+    "Interior": {
+      "Wall Painting": ["Use Asian Paints Royale", "Apply two coats"],
+      "Ceiling Touchup": ["Use white paint only"]
+    },
+    "Exterior": {
+      "Outer Walls": ["Use weather-proof paint"],
+      "Gate Painting": ["Metal primer and black finish"]
+    }
+  }
+}

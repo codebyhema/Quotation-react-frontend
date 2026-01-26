@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Navbar from "./Navbar";
+import Dashboard from "./Dashboard";
+import Quotation from "./Quotation";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("dashboard");
+  const [quotationToEdit, setQuotationToEdit] = useState(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ transition: "opacity 0.4s ease-in" }}>
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+
+      {activeTab === "dashboard" && (
+        <Dashboard
+          setActiveTab={setActiveTab}
+          setQuotationToEdit={setQuotationToEdit}
+        />
+      )}
+      {activeTab === "quotation" && (
+        <Quotation
+          quotationToEdit={quotationToEdit}
+          setQuotationToEdit={setQuotationToEdit}
+          setActiveTab={setActiveTab}
+        />
+      )}
     </div>
   );
 }
-
 export default App;

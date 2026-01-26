@@ -1,0 +1,18 @@
+@import "./reset";
+@import "./font";
+// @import "./App";
+@import "./form";
+@import "./table";
+
+body {
+  font-family: "poppins";
+  background-color: black;
+}
+.content-container {
+  display: flex; // makes children appear side by side
+  gap: 20px; // space between form and table
+  align-items: flex-start; // optional: aligns top edges
+  margin: 5px 10px 10px 10px;
+  border-top: 1px solid #534d4d;
+  // box-shadow: 12px 0px 10px 2px rgb(67 59 62);
+}

@@ -1,0 +1,109 @@
+form {
+  width: 50%;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .allBtn {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+
+    .newQ,
+    .saveQ,
+    .printQ {
+      padding: 12px 12px;
+      border-radius: 50px;
+      border: none;
+      background: rgb(29 32 33);
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: #79a36d;
+        box-shadow: 5px 0px 5px 2px rgb(49 47 43);
+      }
+    }
+
+    .printQ {
+      padding: 0px 25px;
+    }
+  }
+
+  #customer {
+    label {
+      margin: 10px 0px 10px 0px;
+    }
+    .button-container {
+      margin-top: 55px;
+    }
+  }
+  .formSide {
+    display: flex;
+    flex-direction: column;
+    height: 365px;
+    background-color: #f5f5f5e6;
+    padding: 30px 20px 25px 22px;
+    border: 1px solid #c9c9c9;
+    box-shadow: 5px 5px 15px -5px rgb(81 73 73);
+    border-radius: 10px;
+
+    label {
+      text-align: left;
+      font-size: 12px;
+      margin: 5px 0px;
+    }
+
+    input,
+    select {
+      width: 90%;
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0px 3px 5px 0px rgb(125 117 123);
+      background: rgba(219, 232, 239, 0.6196078431);
+
+      option {
+        border-radius: 10px;
+      }
+    }
+    select {
+      padding-left: 7px;
+      color: #6a6a6a;
+    }
+    .button-container {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin: 40px 0px 0px 0px;
+
+      .saveButton,
+      .deleteButton,
+      .editButton {
+        padding: 8px 12px;
+        border-radius: 5px;
+        border: none;
+        background: #79a36d;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          border: none;
+          background-color: rgb(29, 32, 33);
+        }
+      }
+      .toggleButton {
+        padding: 8px 12px;
+        border-radius: 5px;
+        // border: 1px solid #1ea1bd;
+        border: none;
+        background: rgba(219, 232, 239, 0.6196078431);
+        color: black;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+  }
+}

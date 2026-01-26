@@ -1,0 +1,67 @@
+.dashboardRows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  padding: 8px 10px;
+  margin: 10px 10px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .qInfo {
+    display: flex;
+    gap: 100px;
+    font-size: 13px;
+    width: 70%;
+    .cname {
+      width: 15%;
+    }
+    .qid {
+      width: 15%;
+    }
+    .data {
+      width: 40%;
+    }
+    span {
+      padding: 0 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .actionsButtons {
+    button {
+      margin-right: 10px;
+      padding: 8px 20px;
+      color: black;
+      cursor: pointer;
+      // background: #79a36d;
+      border-radius: 5px;
+      border: none;
+      &:hover {
+        color: white;
+        background-color: rgb(29, 32, 33);
+      }
+    }
+    .view {
+      background: #9bb0db;
+    }
+    .update {
+      background: #6f8d6f;
+    }
+    .delete {
+      background: transparent;
+    }
+  }
+}
+.highlight {
+  background-color: #293b4b;
+  transition: all 0.3s ease;
+  // background-color: #2d2d12;
+  // border: 1px dotted whitesmoke;
+}

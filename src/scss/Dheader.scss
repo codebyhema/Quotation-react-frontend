@@ -1,0 +1,63 @@
+.Dheader {
+  border-top: 1px solid #534d4d;
+  margin: 5px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+
+  input {
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 40%;
+    height: 36px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    &:focus {
+      outline: 1px solid #1280e5;
+    }
+  }
+  .sortOptions {
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 8px 8px 0px 8px;
+
+    span {
+      color: #534d4d;
+      font-size: 14px;
+    }
+
+    .dropdown {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background: rgb(251 251 251 / 10%);
+      backdrop-filter: blur(20px);
+      border-radius: 8px;
+      margin-top: 8px;
+      padding: 5px 0;
+      z-index: 2;
+
+      .dropdown-item {
+        padding: 8px 16px;
+        color: white;
+        font-size: 13px;
+        transition: background 0.2s;
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 8px;
+        }
+
+        &.selected {
+          font-weight: bold;
+          color: black;
+        }
+      }
+    }
+  }
+}

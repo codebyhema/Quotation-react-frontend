@@ -1,0 +1,184 @@
+.estimate-invoice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .quote {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+
+    .pdf-format {
+      // height: 11.735in;
+      width: 8.3in;
+      background: #fff;
+      border: 1px solid #c9c9c9;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px 10px;
+        height: 70px;
+        border-bottom: 1px solid rgba(70, 169, 190, 0.3803921569);
+
+        img {
+          width: 120px;
+        }
+
+        .contact {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          font-size: 10px;
+          justify-content: space-between;
+
+          h3 {
+            font-weight: bold;
+            color: #343434;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .sub-header {
+        color: rgb(41 36 50);
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .client-detail {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          font-size: 11px;
+          line-height: 19px;
+          letter-spacing: 0.2px;
+          width: 60%;
+        }
+        .other-detail-title {
+          display: flex;
+          flex-direction: column;
+          font-size: 10px;
+          align-items: end;
+          line-height: 22px;
+          width: 18%;
+          padding-right: 20px;
+          justify-content: end;
+        }
+        .other-detail-content {
+          display: flex;
+          flex-direction: column;
+          font-size: 10px;
+          line-height: 22px;
+          color: #646464;
+          justify-content: end;
+          align-items: end;
+        }
+      }
+      .subject {
+        font-size: 11px;
+        border-top: 1px solid rgb(119 119 119);
+        padding: 10px 15px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        color: rgb(41 36 50);
+
+        span {
+          color: #606060;
+        }
+      }
+      table {
+        font-size: 10px;
+        width: calc(100% - 20px);
+        text-align: left;
+        table-layout: auto;
+        margin: 0 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.3019607843);
+
+        th {
+          color: rgb(41 36 50);
+        }
+        .selected {
+          background-color: whitesmoke !important; // slightly lighter for subheading
+          // border: 1px solid rgb(30, 161, 189);
+          box-shadow: -5px 0px 10px rgba(14, 78, 12, 0.582);
+        }
+
+        tr {
+          border: solid #0000004d;
+          border-width: 1px 0 0;
+          cursor: pointer;
+
+          &.category {
+            background: #f3f3f3;
+
+            td {
+              color: #000;
+            }
+          }
+          &.subCategory {
+            td {
+              color: #6a6a6a;
+            }
+          }
+          &.empty-space {
+            border: none;
+
+            td {
+              padding: 5px 0;
+            }
+          }
+        }
+        tbody tr:first-child {
+          border-color: #777;
+        }
+        thead th,
+        tbody td {
+          padding: 10px 5px;
+          line-height: 14px;
+
+          &:nth-child(1) {
+            width: 1%;
+            text-align: center;
+          }
+          &:nth-child(2) {
+            width: 30%;
+          }
+          &:nth-child(3) {
+            width: 10%;
+            text-align: right;
+          }
+          &:nth-child(4) {
+            width: 59%;
+          }
+        }
+        tbody td {
+          color: #444444;
+          padding: 3px 5px;
+          font-size: 9.5px;
+        }
+
+        .tfoot {
+          border-color: #777;
+
+          td {
+            color: rgb(41 36 50);
+            padding: 15px 5px;
+            font-size: 11px;
+
+            &:nth-child(1) {
+              text-align: right;
+            }
+            &:nth-child(2) {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

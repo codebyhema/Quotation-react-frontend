@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    // background: transparent !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+
+  .pdf-format,
+  .pdf-format * {
+    visibility: visible;
+  }
+
+  .pdf-format {
+    height: 11.735in;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  // thead {
+  //   display: table-header-group;
+  // // }
+  // tfoot {
+  //   display: table-footer-group !important;
+  // }
+  tr,
+  th,
+  td {
+    page-break-inside: avoid;
+  }
+  .category,
+  .subCategory,
+  .jobCategory {
+    page-break-inside: avoid;
+  }
+}
