@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# GharWALA Quotation System (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **GharWALA Quotation System** is an internal web application built to help the GharWALA interior team quickly create, manage, and print client quotations.
 
-## Available Scripts
+This project was developed as part of an internship / startup workflow and was actively used for generating quotations for clients.  
+It was designed specifically for **internal company use**, not for public users, and served as a **functional prototype** for real client operations.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🧾 Create detailed interior quotations  
+- 🔍 View and search quotations by customer name or quotation ID  
+- ✏️ Update existing quotations  
+- 🗑️ Delete quotations when required  
+- 📄 Generate clean, printable PDF quotations  
+- 📊 Dashboard view for managing multiple quotations  
+- 🌙 Dark-themed UI optimized for daily internal use  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- React JS
+- JavaScript (ES6+)
+- CSS / Custom styling
 
-### `npm run build`
+### Backend
+- PHP (REST-style APIs)
+- MySQL database  
+*(Backend is maintained in a separate repository)*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔗 Backend Integration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This frontend communicates with a PHP backend via API endpoints to:
+- Save quotations
+- Fetch quotation lists
+- Update quotation data
+- Delete quotations
 
-### `npm run eject`
+> ⚠️ Backend URLs and database credentials are not included in this repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ▶️ Running the Project Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/codebyhema/Quotation-react-app.git
+```
+Navigate into the project folder:
 
-## Learn More
+```bash
+cd Quotation-react-app
+```
+Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
+Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
+Open in browser:
 
-### Code Splitting
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Make sure the backend server (PHP + MySQL) is running separately.
 
-### Analyzing the Bundle Size
+## 🔒 Usage & Permissions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This is an internal business tool built for company use.
+Shared for portfolio and demonstration purposes only.
+Reuse, modification, or redistribution is not permitted without permission.
 
-### Making a Progressive Web App
+## 👩‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Developed by Hema Sutar
 
-### Advanced Configuration
+📧 For questions or permission requests, reach out via:  
+- GitHub: [codebyhema](https://github.com/codebyhema)  
+- Email: *(hemasutar2003@gmail.com)*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
