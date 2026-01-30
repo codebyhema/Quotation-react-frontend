@@ -1,10 +1,9 @@
-# GharWALA Quotation System (Frontend)
+# Quotation Web App (Frontend)
 
-The **GharWALA Quotation System** is an internal web application built to help the GharWALA interior team quickly create, manage, and print client quotations.
+The Quotation Web App is an internal web application built to create, manage, and print client quotations efficiently.
 
-This project was developed as part of an internship / startup workflow and was actively used for generating quotations for clients.  
-It was designed specifically for **internal company use**, not for public users, and served as a **functional prototype** for real client operations.
-
+This project was developed as a real-world internal business tool and was actively used for managing quotations in day-to-day operations.
+It is designed for internal use, focusing on usability, structured workflows, and clean printable outputs.
 ---
 
 ## 🚀 Key Features
@@ -13,7 +12,7 @@ It was designed specifically for **internal company use**, not for public users,
 - 🔍 View and search quotations by customer name or quotation ID  
 - ✏️ Update existing quotations  
 - 🗑️ Delete quotations when required  
-- 📄 Generate clean, printable PDF quotations  
+- 📄 Generate clean, printable PDF quotations using browser print 
 - 📊 Dashboard view for managing multiple quotations  
 - 🌙 Dark-themed UI optimized for daily internal use  
 
@@ -75,7 +74,7 @@ Make sure the backend server (PHP + MySQL) is running separately.
 
 ## 🔒 Usage & Permissions
 
-This is an internal business tool built for company use.
+This is an internal business tool built for operational use.
 Shared for portfolio and demonstration purposes only.
 Reuse, modification, or redistribution is not permitted without permission.
 
